@@ -1,0 +1,16 @@
+package Arrays;
+
+import java.util.Arrays;
+
+public class Q3 {
+    public static void main(String[] args){
+        int[] arr = {1,2,3,4,5};
+        int[] res = new int[arr.length*2];
+
+        for(int i=0; i<arr.length; i++){
+            res[i] = arr[i];
+            res[i+arr.length] = arr[i];
+        }
+        System.out.println(Arrays.toString(res));
+    }
+}
